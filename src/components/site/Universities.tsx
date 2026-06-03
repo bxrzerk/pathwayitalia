@@ -1,10 +1,17 @@
+import bocconi from "@/assets/uni-bocconi.jpg";
+import bologna from "@/assets/uni-bologna.jpg";
+import cattolica from "@/assets/uni-cattolica.jpg";
+import polimi from "@/assets/uni-polimi.jpg";
+import luiss from "@/assets/uni-luiss.jpg";
+import padova from "@/assets/uni-padova.jpg";
+
 const unis = [
-  { name: "Università Bocconi", city: "Milan", tags: ["Business", "Economics"], gradient: "from-terracotta/30 to-gold/20" },
-  { name: "Università di Bologna", city: "Bologna", tags: ["World's Oldest", "Multidisciplinary"], gradient: "from-ocean/30 to-sage/20" },
-  { name: "Università Cattolica", city: "Milan", tags: ["Humanities", "Law"], gradient: "from-blush/40 to-ivory" },
-  { name: "Politecnico di Milano", city: "Milan", tags: ["Engineering", "Design"], gradient: "from-sage/30 to-ocean/20" },
-  { name: "LUISS Guido Carli", city: "Rome", tags: ["Politics", "Economics"], gradient: "from-gold/30 to-terracotta/20" },
-  { name: "Università di Padova", city: "Padova", tags: ["Sciences", "Medicine"], gradient: "from-ocean/30 to-blush/20" },
+  { name: "Università Bocconi", city: "Milan", tags: ["Business", "Economics"], image: bocconi },
+  { name: "Università di Bologna", city: "Bologna", tags: ["World's Oldest", "Multidisciplinary"], image: bologna },
+  { name: "Università Cattolica", city: "Milan", tags: ["Humanities", "Law"], image: cattolica },
+  { name: "Politecnico di Milano", city: "Milan", tags: ["Engineering", "Design"], image: polimi },
+  { name: "LUISS Guido Carli", city: "Rome", tags: ["Politics", "Economics"], image: luiss },
+  { name: "Università di Padova", city: "Padova", tags: ["Sciences", "Medicine"], image: padova },
 ];
 
 export function Universities() {
@@ -32,9 +39,17 @@ export function Universities() {
               key={u.name}
               className="reveal snap-start flex-shrink-0 w-[300px] sm:w-[340px] bg-card border border-border rounded-2xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl transition-all duration-500"
             >
-              <div className={`h-48 bg-gradient-to-br ${u.gradient} relative`}>
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(255,255,255,0.4),transparent_60%)]" />
-                <div className="absolute bottom-4 left-5 text-[10px] uppercase tracking-[0.25em] text-ocean/80">
+              <div className="h-48 relative overflow-hidden">
+                <img
+                  src={u.image}
+                  alt={`${u.name} in ${u.city}`}
+                  loading="lazy"
+                  width={640}
+                  height={512}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-ocean/60 via-ocean/10 to-transparent" />
+                <div className="absolute bottom-3 left-5 text-[10px] uppercase tracking-[0.25em] text-ivory">
                   {u.city}
                 </div>
               </div>
