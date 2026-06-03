@@ -41,13 +41,6 @@ export function Hero() {
           </div>
         </div>
 
-        <a
-          href="#about"
-          className="mx-auto text-ivory/80 flex flex-col items-center gap-2 text-[10px] uppercase tracking-[0.3em]"
-        >
-          Scroll
-          <span className="block h-10 w-px bg-ivory/60 animate-pulse" />
-        </a>
       </div>
     </section>
   );
