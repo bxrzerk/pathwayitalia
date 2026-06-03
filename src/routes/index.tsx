@@ -5,6 +5,8 @@ import { WhoWeAre } from "@/components/site/WhoWeAre";
 import { Services } from "@/components/site/Services";
 import { WhyItaly } from "@/components/site/WhyItaly";
 import { Universities } from "@/components/site/Universities";
+import { Programs } from "@/components/site/Programs";
+import { Faq } from "@/components/site/Faq";
 import { Apply } from "@/components/site/Apply";
 import { Footer } from "@/components/site/Footer";
 import { useReveal } from "@/hooks/use-reveal";
@@ -39,6 +41,8 @@ function Index() {
       <Services />
       <WhyItaly />
       <Universities />
+      <Programs />
+      <Faq />
       <Apply />
       <Footer />
     </main>

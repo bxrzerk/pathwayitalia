@@ -4,6 +4,8 @@ import cattolica from "@/assets/uni-cattolica.jpg";
 import polimi from "@/assets/uni-polimi.jpg";
 import luiss from "@/assets/uni-luiss.jpg";
 import padova from "@/assets/uni-padova.jpg";
+import marangoni from "@/assets/uni-marangoni.jpg";
+import ied from "@/assets/uni-ied.jpg";
 
 const unis = [
   { name: "Università Bocconi", city: "Milan", tags: ["Business", "Economics"], image: bocconi },
@@ -12,6 +14,8 @@ const unis = [
   { name: "Politecnico di Milano", city: "Milan", tags: ["Engineering", "Design"], image: polimi },
   { name: "LUISS Guido Carli", city: "Rome", tags: ["Politics", "Economics"], image: luiss },
   { name: "Università di Padova", city: "Padova", tags: ["Sciences", "Medicine"], image: padova },
+  { name: "Istituto Marangoni", city: "Milan", tags: ["Fashion", "Luxury"], image: marangoni },
+  { name: "IED Istituto Europeo di Design", city: "Milan / Rome", tags: ["Design", "Visual Arts"], image: ied },
 ];
 
 export function Universities() {
