@@ -31,11 +31,26 @@ export function Navbar() {
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-10 h-20 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3 leading-none">
-          <img
-            src={logo}
-            alt="PathwayItalia — led by Sohaib Jehanzeb"
-            className="h-10 sm:h-12 w-auto"
-          />
+          <div className="flex flex-col">
+            <span
+              className="text-xl sm:text-2xl tracking-tight"
+              style={{
+                fontFamily: '"Times New Roman MT", "Times New Roman", Times, serif',
+                color: '#fdec71',
+              }}
+            >
+              PathwayItalia
+            </span>
+            <span
+              className="text-[10px] tracking-[0.2em] uppercase"
+              style={{
+                fontFamily: '"League Spartan", sans-serif',
+                color: '#ffffff',
+              }}
+            >
+              led by Sohaib Jehanzeb.
+            </span>
+          </div>
           <span className="hidden md:inline-block pl-3 ml-1 border-l border-ocean/20 text-[10px] uppercase tracking-[0.28em] text-gold/90">
             Italy, Simplified.
           </span>
