@@ -7,6 +7,8 @@ const links = [
   { href: "#services", label: "Services" },
   { href: "#why-italy", label: "Why Italy" },
   { href: "#universities", label: "Universities" },
+  { href: "#programs", label: "Programs" },
+  { href: "#faq", label: "FAQ" },
   { href: "#apply", label: "Apply Now" },
 ];
 
