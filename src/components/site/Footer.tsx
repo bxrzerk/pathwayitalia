@@ -15,7 +15,7 @@ export function Footer() {
         </div>
         <div className="md:text-right flex flex-col items-center md:items-end gap-4">
           <a
-            href="mailto:pathwayitalia@gmail.com"
+            href="mailto:info@pathwayitalia.it"
             className="text-sm text-ivory/60 hover:text-gold transition-colors"
           >
             info@pathwayitalia.it
